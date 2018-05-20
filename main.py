@@ -9,6 +9,9 @@ master = pygame.display.set_mode((1000,500))
 pygame.display.set_caption('Continous Ball')
 clock = pygame.time.Clock()
 
+white = (255, 255, 255)
+black = (0, 0, 0)
+
 color_list = [r, g, b]
 h = 0
 
