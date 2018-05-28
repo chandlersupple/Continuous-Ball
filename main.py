@@ -12,7 +12,6 @@ clock = pygame.time.Clock()
 white = (255, 255, 255)
 black = (0, 0, 0)
 
-color_list = [r, g, b]
 h = 0
 
 class Ball:
@@ -52,6 +51,7 @@ while True:
     h = h + 0.0015
     r, g, b = colorsys.hsv_to_rgb(h, 1, 1)
     color_rgb = [r, g, b]
+    color_list = [r, g, b]
     
     for color in range (0, 3):
         color_list[color] = int(round((color_rgb[color] * 255), 0))
